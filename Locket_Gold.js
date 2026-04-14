@@ -1,5 +1,5 @@
 const userKey = $prefs.valueForKey('nkhanhs_key');
-const serverUrl = `http://45.117.166.147:25070/verify?key=${userKey}`;
+const serverUrl = `http://Mbasic6.pikamc.vn:25395/verify?key=${userKey}`;
 
 if (!userKey) {
     $notification.post("Ngọc Khánh VIP", "Yêu cầu kích hoạt", "Vui lòng vào trang BoxJS (boxjs.com) để nhập Key!");
