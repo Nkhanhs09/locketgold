@@ -1,5 +1,5 @@
 const userKey = $prefs.valueForKey('nkhanhs_key');
-const serverUrl = `https://key.domaincuaban.com/verify?key=${userKey}`; 
+const serverUrl = `http://45.117.166.147:25070/verify?key=${userKey}`;
 
 if (!userKey) {
     $notification.post("Ngọc Khánh VIP", "Yêu cầu kích hoạt", "Vui lòng vào trang BoxJS (boxjs.com) để nhập Key!");
