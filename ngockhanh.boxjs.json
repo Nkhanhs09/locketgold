@@ -1,0 +1,16 @@
+{
+  "id": "nkhanhs_bypass",
+  "name": "Locket Gold - Ngọc Khánh",
+  "author": "@Ngọc Khánh",
+  "keys": ["nkhanhs_key"],
+  "settings": [
+    {
+      "id": "nkhanhs_key",
+      "name": "Nhập Key VIP",
+      "val": "",
+      "type": "text",
+      "desc": "Điền mã Key bạn đã mua vào đây."
+    }
+  ]
+}
+
