@@ -2,12 +2,12 @@ const userKey = $prefs.valueForKey('nkhanhs_key');
 const serverUrl = `http://Mbasic6.pikamc.vn:25395/verify?key=${userKey}`;
 
 if (!userKey) {
-    $notification.post("Ngọc Khánh VIP", "Yêu cầu kích hoạt", "Vui lòng vào trang BoxJS (boxjs.com) để nhập Key!");
+    $notification.post("KEY VIP", "Yêu cầu kích hoạt", "Vui lòng vào trang NEKOMC.ASIA (boxjs.com) để nhập Key!");
     $done({});
 } else {
     $httpClient.get(serverUrl, function(error, response, data) {
         if (error) {
-            $notification.post("Ngọc Khánh VIP", "Lỗi Mạng", "Không thể kết nối đến máy chủ kiểm tra Key!");
+            $notification.post("KEY VIP", "Lỗi Mạng", "Không thể kết nối đến máy chủ kiểm tra Key!");
             $done({});
         } else {
             let checkResult;
@@ -37,7 +37,7 @@ if (!userKey) {
                 //       KẾT THÚC CODE GỐC CỦA BẠN            //
                 // ========================================== //
             } else {
-                $notification.post("Ngọc Khánh VIP", "Lỗi Xác Thực", checkResult.msg || "Key không hợp lệ hoặc đã hết hạn!");
+                $notification.post("KEY VIP", "Lỗi Xác Thực", checkResult.msg || "Key không hợp lệ hoặc đã hết hạn!");
                 $done({});
             }
         }
